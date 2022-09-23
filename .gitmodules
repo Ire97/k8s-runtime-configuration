@@ -1,15 +1,15 @@
 [submodule "k8s-topology-operator"]
 	path = k8s-topology-operator
-	url = git@github.com-amarchese96:amarchese96/k8s-topology-operator.git
+	url = git@github.com:amarchese96/k8s-topology-operator.git
 [submodule "k8s-rc-operator"]
 	path = k8s-rc-operator
-	url = git@github.com-amarchese96:amarchese96/k8s-rc-operator.git
+	url = git@github.com:amarchese96/k8s-rc-operator.git
 [submodule "k8s-telemetry-service"]
 	path = k8s-telemetry-service
-	url = git@github.com-amarchese96:amarchese96/k8s-telemetry-service.git
+	url = git@github.com:amarchese96/k8s-telemetry-service.git
 [submodule "scheduler-plugins"]
 	path = scheduler-plugins
-	url = git@github.com-amarchese96:amarchese96/scheduler-plugins.git
+	url = git@github.com:amarchese96/scheduler-plugins.git
 [submodule "mentat"]
 	path = mentat
-	url = git@github.com-amarchese96:amarchese96/mentat.git
+	url = git@github.com:amarchese96/mentat.git
