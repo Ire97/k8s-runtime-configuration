@@ -1,0 +1,10 @@
+apiVersion: unict.it/v1alpha1
+kind: ControllableApp
+metadata:
+  name: sockshop-app
+spec:
+  name: sockshop
+  namespace: default
+  topologyKey: "no-key"
+  runInterval: 90
+  updateFactor: 10

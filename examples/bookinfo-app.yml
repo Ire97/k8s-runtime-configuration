@@ -1,0 +1,10 @@
+apiVersion: unict.it/v1alpha1
+kind: ControllableApp
+metadata:
+  name: bookinfo-app
+spec:
+  name: bookinfo
+  namespace: default
+  topologyKey: "no-key"
+  runInterval: 60
+  updateFactor: 10
