@@ -12,4 +12,4 @@
 	url = git@github.com:amarchese96/mentat.git
 [submodule "k8s-app-operator"]
 	path = k8s-app-operator
-	url = git@github.com-amarchese96:amarchese96/k8s-app-operator.git
+	url = git@github.com:amarchese96/k8s-app-operator.git
