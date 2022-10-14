@@ -1,7 +1,7 @@
 scheduler:
-  image: ghcr.io/amarchese96/kube-scheduler:nascheduling-0.0.3
+  image: ghcr.io/amarchese96/kube-scheduler:nascheduling-0.0.7
 
 plugins:
   enabled: ["NetworkAwareScheduling"]
-  disabled: ["InterPodAffinity"]
+  disabled: ["PrioritySort", "InterPodAffinity"]
 

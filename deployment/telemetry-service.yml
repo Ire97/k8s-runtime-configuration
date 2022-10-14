@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: telemetry-service
-        image: ghcr.io/amarchese96/k8s-telemetry-service:f370410
+        image: ghcr.io/amarchese96/k8s-telemetry-service:284197b
         env:
         - name: PROMETHEUS_ADDRESS
           value: http://prometheus-server.istio-system:9090
