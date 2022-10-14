@@ -7,4 +7,3 @@ spec:
   namespace: default
   topologyKey: "no-key"
   runInterval: 60
-  updateFactor: 10

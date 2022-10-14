@@ -15,6 +15,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: emailservice
+        index: "2"
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -93,6 +94,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: checkoutservice
+        index: "1"
     spec:
       serviceAccountName: default
       securityContext:
@@ -184,6 +186,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: recommendationservice
+        index: "1"
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -266,6 +269,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: frontend
+        index: "0"
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
@@ -374,6 +378,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: paymentservice
+        index: "2"
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -452,6 +457,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: productcatalogservice
+        index: "2"
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -532,6 +538,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: cartservice
+        index: "2"
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -670,6 +677,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: currencyservice
+        index: "2"
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -749,6 +757,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: shippingservice
+        index: "2"
     spec:
       serviceAccountName: default
       securityContext:
@@ -829,6 +838,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: redis-cart
+        index: "3"
     spec:
       securityContext:
         fsGroup: 1000
@@ -904,6 +914,7 @@ spec:
       labels:
         app-group: onlineboutique
         app: adservice
+        index: "1"
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -933,13 +944,13 @@ spec:
           value: "1"
         # - name: JAEGER_SERVICE_ADDR
         #   value: "jaeger-collector:14268"
-        resources:
-          requests:
-            cpu: 200m
-            memory: 180Mi
-          limits:
-            cpu: 300m
-            memory: 300Mi
+        # resources:
+        #   requests:
+        #     cpu: 200m
+        #     memory: 180Mi
+        #   limits:
+        #     cpu: 300m
+        #     memory: 300Mi
         readinessProbe:
           initialDelaySeconds: 20
           periodSeconds: 15
@@ -1032,7 +1043,7 @@ spec:
         - name: LISTEN
           value: ":80"
         - name: TALK
-          value: "frontend.default.svc.cluster.local:80"
+          value: "frontend:80"
         ports:
         - containerPort: 80
       serviceAccountName: labeler-sa
