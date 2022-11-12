@@ -1,0 +1,14 @@
+apiVersion: unict.it/v1alpha1
+kind: Topology
+metadata:
+  name: microk8s-topology
+spec:
+  #nodes:
+  # - firstnode
+  # - secondnode
+  # - thirdnode
+  # - fourthnode
+  #nodeSelector:
+  #  kubernetes.io/hostname : firstnode
+  #  kubernetes.io/os: linux 
+  runInterval: 30
