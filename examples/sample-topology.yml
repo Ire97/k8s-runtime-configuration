@@ -1,8 +1,7 @@
 apiVersion: unict.it/v1alpha1
 kind: Topology
 metadata:
-  name: minikube-topology
+  name: sample-topology
 spec:
-  nodes:
-  - minikube
+  nodeSelector: {}
   runInterval: 30
