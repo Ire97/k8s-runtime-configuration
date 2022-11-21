@@ -1,3 +1,16 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: telemetry-service
+  namespace: istio-system
+spec:
+  selector:
+    app: telemetry-service
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
